@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <h3>Welcome to Meal Buddy!</h3>
 
-    <a href="open_signup">SIGN UP</a>
-    <br>
-    <a href="open_signin">SIGN IN</a>
+    <div class="card">
+        <h3>Welcome to <span>Meal Buddy</span></h3>
+
+        <a href="{% url 'open_signup' %}">SIGN UP</a>
+        <a href="{% url 'open_signin' %}">SIGN IN</a>
+    </div>
 
 </body>
 </html>
